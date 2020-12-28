@@ -5,7 +5,7 @@ var outputDiv = document.querySelector("#output");
 //Server URL
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
-btnTranslate.addEventListener("click", clickEventHandler);
+
 
 function getTranslationURL(text) {
     return serverURL + "?text=" + text;
@@ -17,6 +17,8 @@ function errorHandler(error) {
 }
 
 
+
+btnTranslate.addEventListener("click", clickEventHandler);
 //Calling Server For Processing
 function clickEventHandler() {
 
